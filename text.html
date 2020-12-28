@@ -13,6 +13,10 @@
 		background-color: #C6E6F3;
 		}
 
+		img:hover{
+		cursor: pointer;
+		}
+
 		.restt{
 		width: 27%;
 		}
@@ -55,7 +59,7 @@
 		<div class="w3-cell-row">
 			<div class="w3-cell restt"></div>
 			<div class="w3-cell w3-center contentt">
-				<img src="img/title.png" alt="IMG is broken" width="100%">
+				<img onclick="main()" src="img/title.png" alt="IMG is broken" width="100%">
 			</div>
 			<div class="w3-cell restt"></div>
 		</div>
@@ -150,6 +154,10 @@
 	</div>
 
 	<script>
+	function main() {
+	window.open("https://juliacanella.com.br/","_self");
+	}
+
 	function PDF1() {
 	window.open("https://esportefabico.wordpress.com/2020/11/20/esforcar-se-para-a-formacao-do-carater/");
 	}
