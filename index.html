@@ -26,28 +26,28 @@
 		}
 
 		.rest{
-		width: 23%;
+		width: 5%;
 		}
 
 		.content{
-		width:54%;
+		width:30%;
 		}
 
 		@media screen and (max-width: 600px) {
 			.restt{
-			width: 15%;
+			width: 5%;
 			}
 
 			.contentt{
-			width:70%;
+			width:90%;
 			}
 
 			.rest{
-			width: 10%;
+			width: 5%;
 			}
 
 			.content{
-			width:80%;
+			width:30%;
 			}
 		}
 	</style>
@@ -56,7 +56,7 @@
 <body style="overflow:hidden">
 	<div class="w3-div w3-margin-bottom">
 
-		<div class="w3-cell-row">
+		<div class="w3-cell-row w3-padding-8">
 			<div class="w3-cell restt"></div>
 			<div class="w3-cell w3-center contentt">
 				<img onclick="main()" src="img/title.png" alt="IMG is broken" width="100%">
@@ -64,14 +64,37 @@
 			<div class="w3-cell restt"></div>
 		</div>
 
-		<p><a href="text.html">Textos</a></p>
-		<p><a href="soundcloud.html">Rádio</a></p>
-		<p><a href="youtube.html">Youtube</a></p>
+		<div class="w3-cell-row w3-padding-16">
+			<div class="w3-cell rest"></div>
+			<div class="w3-cell content w3-mobile">
+				<img onclick="text()" src="img/main01.png" alt="IMG is broken" width="100%">
+			</div>
+			<div class="w3-cell content w3-mobile">
+				<img onclick="audio()" src="img/main02.png" alt="IMG is broken" width="100%">
+			</div>
+			<div class="w3-cell content w3-mobile">
+				<img onclick="video()" src="img/main03.png" alt="IMG is broken" width="100%">
+			</div>
+			<div class=""></div>
+		</div>
+
 	</div>
 
 	<script>
 		function main() {
 			window.open("https://juliacanella.com.br/","_self");
+		}
+
+		function text() {
+			window.open("text.html","_self");
+		}
+
+		function audio() {
+			window.open("soundcloud.html","_self");
+		}
+
+		function video() {
+			window.open("youtube.html","_self");
 		}
 		;
 	</script>
